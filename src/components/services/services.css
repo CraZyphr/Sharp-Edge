@@ -1,0 +1,77 @@
+.rotate-on-hover:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.hide-on-hover {
+  display: block;
+  margin-top: -100px;
+  opacity: 0;
+  transition: margin-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.col-md-4:hover .hide-on-hover,
+.col-md-12:hover .hide-on-hover {
+  margin-top: 0;
+  opacity: 1;
+}
+
+/* Updated CSS for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Adjust the spacing between containers */
+  }
+
+  .row.text-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    height: 340px;
+    margin-bottom: 20px; /* Adjust the margin between items in the same container */
+  }
+
+  .col-md-4:hover + .row.text-center {
+    margin-top: 150px; /* Adjust the margin to move down the next container items */
+  }
+
+  .hide-on-hover {
+    margin-top: 10px; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Adjust the spacing between containers */
+  }
+  p.section-subheading{
+    margin-right: -15% !important;
+  }
+  
+  .row.text-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    height: 340px;
+    margin-left:20% ;
+ /* Adjust the margin between items in the same container */
+  }
+  .col-md-12{
+    height: 340px;
+    margin-left:20% ;
+    margin-bottom: -80px;
+  }
+  .col-md-4:hover + .row.text-center {
+    margin-top: 150px; /* Adjust the margin to move down the next container items */
+  }
+
+  .hide-on-hover {
+    margin-top: 10px; /* Adjust the margin for smaller screens */
+  }
+  
+}

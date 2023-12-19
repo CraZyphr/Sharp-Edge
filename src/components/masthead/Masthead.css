@@ -1,0 +1,302 @@
+/* Masthead.css */
+
+.masthead-subheading,
+.masthead-heading {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.masthead {
+  height: 90vh;
+  background-size: cover;
+  background-position: 0% 50%;
+  transition: background-position 1s ease-in-out;
+  position: relative;
+  border-radius: 5px;
+  color: black;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f4ce14;
+  height: 80px !important;
+  transition: transform 0.2s ease-out;
+  padding: 50px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2) !important;
+  animation: none;
+}
+
+/* Animation for constant movement */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.swiper-button-prev {
+  animation: moveLeft 2s linear infinite;
+}
+
+.swiper-button-next {
+  animation: moveRight 2s linear infinite;
+}
+
+.swiper-pagination-bullet {
+  background-color: #f4ce14;
+  width: 20px;
+  border-radius: 20px;
+}
+
+.masthead:hover {
+  background-position: 100% 50%;
+}
+
+.butt {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -50px;
+  gap: -1px;
+}
+
+.masthead-heading {
+  margin-top: -90px;
+  font-size: 3.5rem; /* Default font size */
+}
+
+
+/* Media query for screens up to 1200px done */
+@media (max-width: 1200px) {
+  .masthead{
+    width: 106%;
+  }
+  .swiper-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .masthead-heading {
+    font-size: 2.5rem;
+    text-align: center; /* Center the text */
+    margin-top: -16%; /* Remove the negative margin for centering */
+  }
+  .swiper-button-next{
+    padding-right: 10%;
+  }
+  
+}
+/* Media query for screens up to 992 done */
+@media (max-width: 992px) {
+  .masthead{
+    width: 127%;
+  }
+  .swiper-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .masthead-heading {
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+    text-align: center; /* Center the text */
+    margin-top: -25%;
+    margin-right: 5%;
+     /* Remove the negative margin for centering */
+  }
+  .swiper-button-next{
+    padding-right: 10%;
+  }
+  .btn{
+    margin-right: 2%;
+  }
+  .swiper-pagination-bullet {
+    display: none;/* Adjust the margin as needed to move the bullet to the left */
+  }
+}
+
+/* Add these styles for screens up to 768px */
+
+@media (max-width: 768px) {
+  .masthead {
+    width: 145%;
+  }
+
+  .swiper-image {
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .masthead-heading {
+    padding-bottom: 15px;
+    font-size: 4rem !important; /* Increase specificity */
+    text-align: center;
+    margin-top: -30%;
+    margin-right: -5%;
+  }
+
+  .swiper-button-next {
+    
+    padding-right: 7%;
+  }
+
+  .btn {
+    margin-right: -5%;
+    font-size: 14px !important; /* Increase specificity */
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .masthead {
+    width: 285%;
+  }
+
+  .swiper-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .masthead-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: -4%;
+  padding-bottom: 10%;
+  }
+
+  .swiper-button-next {
+    padding-right: 5%;
+  }
+  .swiper-button-prev {
+    padding-left: 9%;
+  }
+
+
+  .btn {
+    margin-right: -2%;
+    font-size: 18px;
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+
+
+.btn {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #696b70;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.8s ease-in-out, width 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn svg {
+  fill: #f4ce14;
+  margin-right: 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #45474b;
+  width: calc(30% + 70px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover svg {
+  fill: #f5f7f8;
+  opacity: 0.7;
+  transform: translateX(-760%);
+}
+
+.btn:last-of-type:hover svg {
+  transform: translateX(-555%);
+}
+
+.btn:first-of-type:hover svg {
+  transform: translateX(-630%);
+}
+
+.btn::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 100%;
+  white-space: nowrap;
+  top: 48.5%;
+  transform: translateY(-50%);
+  padding-left: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, left 0.5s ease-in-out;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  left: 10px;
+}
+
+.btn:first-of-type:hover::after {
+  left: 50px;
+}
+
+.btn:last-of-type:hover::after {
+  left: 90px;
+}
