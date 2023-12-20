@@ -12,11 +12,13 @@
   margin-bottom: -10px; /* Adjust this value as needed */
   position: relative;
   top: -80px; /* Adjust this value as needed */
+  
 }
 
 .social:hover {
   background-color: #45474b;
   color: #1DA1F2;
+  cursor: pointer;
 }
 
 .team-member:hover .additional-info::before {
@@ -30,6 +32,7 @@
   left: 0;
   z-index: -1;
   animation: revealText 0.8s forwards;
+  cursor: pointer;
 }
 
 @keyframes revealText {
@@ -93,3 +96,30 @@
     transform: translateY(0);
   }
 } */
+.popup-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  text-align: center;
+  border-radius: 10px;
+  height: 70%;
+  width: 50%;
+}
+
+.popup-info img {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}

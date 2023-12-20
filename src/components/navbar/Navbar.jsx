@@ -30,7 +30,7 @@ function Navbar() {
 
   const navbarStyle = {
    
-    width: '44%',
+    width: '100%',
     paddingLeft: '4px', // Adjust the left padding as needed
     paddingRight: '30px', // Adjust the right padding as needed
   };
