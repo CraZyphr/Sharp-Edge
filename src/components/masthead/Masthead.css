@@ -1,4 +1,4 @@
-/* Masthead.css */
+
 
 .masthead-subheading,
 .masthead-heading {
@@ -16,7 +16,7 @@
 }
 
 .masthead {
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: 0% 50%;
   transition: background-position 1s ease-in-out;
@@ -105,134 +105,10 @@
 }
 
 .masthead-heading {
-  margin-top: -90px;
-  font-size: 3.5rem; /* Default font size */
+  margin-top: -120px;
+  font-size: 4rem; 
+  padding-bottom: 30px;
 }
-
-
-/* Media query for screens up to 1200px done */
-@media (max-width: 1200px) {
-  .masthead{
-    width: 106%;
-  }
-  .swiper-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .masthead-heading {
-    font-size: 2.5rem;
-    text-align: center; /* Center the text */
-    margin-top: -16%; /* Remove the negative margin for centering */
-  }
-  .swiper-button-next{
-    padding-right: 10%;
-  }
-  
-}
-/* Media query for screens up to 992 done */
-@media (max-width: 992px) {
-  .masthead{
-    width: 127%;
-  }
-  .swiper-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .masthead-heading {
-    padding-bottom: 40px;
-    font-size: 2.5rem;
-    text-align: center; /* Center the text */
-    margin-top: -25%;
-    margin-right: 5%;
-     /* Remove the negative margin for centering */
-  }
-  .swiper-button-next{
-    padding-right: 10%;
-  }
-  .btn{
-    margin-right: 2%;
-  }
-  .swiper-pagination-bullet {
-    display: none;/* Adjust the margin as needed to move the bullet to the left */
-  }
-}
-
-/* Add these styles for screens up to 768px */
-
-@media (max-width: 768px) {
-  .masthead {
-    width: 145%;
-  }
-
-  .swiper-image {
-    width: fit-content;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .masthead-heading {
-    padding-bottom: 15px;
-    font-size: 4rem !important; /* Increase specificity */
-    text-align: center;
-    margin-top: -30%;
-    margin-right: -5%;
-  }
-
-  .swiper-button-next {
-    
-    padding-right: 7%;
-  }
-
-  .btn {
-    margin-right: -5%;
-    font-size: 14px !important; /* Increase specificity */
-  }
-
-  .swiper-pagination-bullet {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .masthead {
-    width: 285%;
-  }
-
-  .swiper-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .masthead-heading {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 10%;
-    margin-right: -4%;
-  padding-bottom: 10%;
-  }
-
-  .swiper-button-next {
-    padding-right: 5%;
-  }
-  .swiper-button-prev {
-    padding-left: 9%;
-  }
-
-
-  .btn {
-    margin-right: -2%;
-    font-size: 18px;
-  }
-
-  .swiper-pagination-bullet {
-    display: none;
-  }
-}
-
-
 
 .btn {
   border-radius: 50px;
@@ -273,7 +149,7 @@
 }
 
 .btn:first-of-type:hover svg {
-  transform: translateX(-630%);
+  transform: translateX(-700%);
 }
 
 .btn::after {
@@ -283,7 +159,7 @@
   white-space: nowrap;
   top: 48.5%;
   transform: translateY(-50%);
-  padding-left: 30px;
+  padding-left: 70px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, left 0.5s ease-in-out;
 }
@@ -294,9 +170,93 @@
 }
 
 .btn:first-of-type:hover::after {
-  left: 50px;
+  left: 35px;
 }
 
 .btn:last-of-type:hover::after {
   left: 90px;
 }
+
+
+
+@media (max-width: 768px) {
+  .masthead {
+    width: 100%;
+  }
+
+  .swiper-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .masthead-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 0;
+    padding-bottom: 10%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .btn {
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .masthead {
+    width: 100%;
+    height: 10%;
+    
+  }
+
+  .gradient-overlay {
+    height: 34%; /* Increase the height as needed */
+  }
+
+  .swiper-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .swiper-slide{
+    margin-top: 40%;
+  }
+  .masthead-heading {
+    font-size: 1.5rem !important; /* Adjust the font size as needed */
+    padding-bottom: -5%; /* Adjust the padding as needed */
+    margin-top: -5%; /* Move the heading upwards */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: -40%;
+  }
+
+  .btn {
+    margin-right: 0;
+    font-size: 15px; /* Adjust the font size as needed */
+    padding: 0px 10px; /* Adjust the padding as needed */
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+

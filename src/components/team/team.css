@@ -47,7 +47,7 @@
 
 .large {
   opacity: 0;
-  transform: translateY(50px); /* Adjust this value as needed */
+  transform: translateY(50px);
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
@@ -55,10 +55,10 @@
   opacity: 1;
   transform: translateY(5);
 }
-/* Add these styles for screens up to 480px */
-@media (max-width: 480px) {
+
+/* @media (max-width: 480px) {
   .team-member {
-   margin-left: 20%; /* Adjust this value as needed */
+   margin-left: 20%; 
   }
 
   .team-member img {
@@ -67,10 +67,29 @@
   }
 
   .additional-info::before {
-    top: 50px; /* Adjust this value to position it just below the social buttons */
+    top: 50px; 
   }
 
   .large {
     transform: translateY(0);
   }
-}
+} */
+
+/* @media (max-width: 320px) {
+  .team-member {
+   margin-left: 5%; 
+  }
+
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .additional-info::before {
+    top: 50px;
+  }
+
+  .large {
+    transform: translateY(0);
+  }
+} */

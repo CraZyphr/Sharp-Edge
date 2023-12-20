@@ -1,28 +1,26 @@
-/* Regular styles for screens larger than 768px */
+
 .form-group {
-    width: 100%; /* Default width for larger screens */
+    width: 100%; 
 }
   
-/* Media query for screens with a width of 768px or smaller */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .page-section {
-        width: 150%; /* Adjust the max-width for screens with a width of 768px or smaller */
-        margin: 0 -15px; /* Adjust negative margin to extend content beyond normal width */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        width: 150%; 
+        margin: 0 -15px; 
+        box-sizing: border-box; 
     }
     
     .form-group {
-        width: 100%; /* Adjust the width for screens with a width of 768px or smaller */
-        margin: auto; /* Center the form-group */
+        width: 100%;
+        margin: auto;
     }
 }
 
-/* Media query for screens with a width of 480px or smaller */
 @media (max-width: 480px) {
     .page-section {
-        width: 290%; /* Adjust the max-width for screens with a width of 480px or smaller */
-        margin: 0 -15px; /* Adjust negative margin to extend content beyond normal width */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        width: 290%; 
+        margin: 0 -15px; 
+        box-sizing: border-box;
     
     }
     h2.section-heading {
@@ -32,7 +30,27 @@
         margin-right: 25% !important;
     }
     .form-group {
-        width: 80%; /* Adjust the width for screens with a width of 480px or smaller */
-        margin: auto; /* Center the form-group */
+        width: 80%; 
+        margin: auto;
     }
 }
+
+
+@media (max-width: 320px) {
+    .page-section {
+        width: 320%; 
+        margin: 0 -15px; 
+        box-sizing: border-box; 
+    
+    }
+    h2.section-heading {
+        margin-right: 20% !important;
+    }
+    h3.section-subheading {
+        margin-right: 20% !important;
+    }
+    .form-group {
+        width: 80%; 
+        margin: auto; 
+    }
+} */

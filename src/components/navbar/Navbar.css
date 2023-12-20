@@ -1,85 +1,9 @@
-/* Navbar Styles */
 
-/* Common styles for larger screens */
 .navbar {
-  transition: background-color 0.3s; /* Add smooth transition for better visual effect */
+  transition: background-color 0.3s, transform 0.5s; /* Add smooth transition for background-color and transform */
   background-color: transparent; /* Set initial background color to transparent */
 }
 
-/* Media query for screens 1200px or larger */
-@media (min-width: 1200px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    height: 80px; /* Set desired height */
-    background-color: rgba(0, 0, 0, 0.681) !important; /* Set the background color when at the top */
-  }
 
-  .navbar-brand {
-    font-size: 18px;
-    margin-left: 15px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 16px;
-    margin-left: 80px;
-  }
-}
-
-/* Media query for screens up to 992px */
-@media (max-width: 992px) {
-  .navbar {
-    padding-right: 120%; /* Adjust the padding as needed */
-    background-color: black !important;
-  }
-
-  .navbar-brand {
-    font-size: 18px;
-    margin-left: 150px;
-  }
-
-  .navbar-hidden {
-    transform: translateY(-100%);
-    transition: transform 1s ease-in-out;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-}
-
-/* Media query for screens up to 768px */
-@media (max-width: 768px) {
-  .navbar {
-    height: 100px;
-    padding-right: 10%;
-    padding-bottom: 60px; /* Adjust the padding as needed */
-    padding-top: 60px; /* Add padding-top for non-collapsed state */
-  }
-
-  .navbar-brand {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-
-  .collapse {
-    padding-top: 10px; /* Adjust the padding as needed */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-}
-/* Media query for screens up to 480px */
-@media (max-width: 480px) {
-
-  #navbarResponsive  {
-    background-color: rgba(0, 0, 0, 0.551) !important; /* Set the background color for collapsed navbar */
-   
-  }
-}
+/* Navbar.css */
+/* CSS */

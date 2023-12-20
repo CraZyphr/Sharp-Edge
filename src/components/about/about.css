@@ -1,16 +1,15 @@
-/* Add responsive styles for screens with a width of 768 pixels or less */
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
   .navbar-brand {
     padding-left: -10px;
   }
 
   .section-heading.text-uppercase {
     font-size: 3rem;
-     /* Adjust the font size as needed */
   }
 
   .section-subheading.text-muted {
-    font-size: 15px; /* Adjust the font size as needed */
+    font-size: 15px;
   }
 
   .page-section {
@@ -24,7 +23,7 @@
 
   .container {
     width: 100%;
-    max-width: 768px ; /* Set max-width to ensure the container takes full width */
+    max-width: 768px ; 
     margin-left: auto;
     margin-right: auto;
   }
@@ -46,8 +45,8 @@
   }
 
   .timeline-image {
-    max-width: 100%; /* Ensure images take full width */
-    margin: 0 auto; /* Center images */
+    max-width: 100%; 
+    margin: 0 auto;
   }
 
   #customTimelineItem .timeline-image h4 {
@@ -65,20 +64,19 @@
     color: white;
   }
 }
+ */
 
-
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .navbar-brand {
     padding-left: -10px;
   }
 
   .section-heading.text-uppercase {
     font-size: 3rem;
-     /* Adjust the font size as needed */
   }
 
   .section-subheading.text-muted {
-    font-size: 15px; /* Adjust the font size as needed */
+    font-size: 15px; 
   }
 
   .page-section {
@@ -92,7 +90,7 @@
 
   .container {
     width: 100%;
-    max-width: 768px ; /* Set max-width to ensure the container takes full width */
+    max-width: 768px ; 
     margin-left: auto;
     margin-right: auto;
   }
@@ -114,8 +112,8 @@
   }
 
   .timeline-image {
-    max-width: 100%; /* Ensure images take full width */
-    margin: 0 auto; /* Center images */
+    max-width: 100%; 
+    margin: 0 auto; 
   }
 
   #customTimelineItem .timeline-image h4 {
@@ -132,30 +130,73 @@
     background-color: #45474b !important;
     color: white;
   }
-}
-/* Existing CSS styles */
+} */
 
-/* Media query for screens with a width of 480px or smaller */
-@media (max-width: 480px) {
+
+
+/* @media (max-width: 480px) {
   .container {
     width: 100%;
     margin: 0 auto;
   }
-
-
-
   h1.section-heading {
     padding-left: 50px;
-    margin-right: -12% !important; /* Adjust the margin-right as needed */
+    margin-right: -12% !important; 
   }
   h2.section-heading {
     padding-left: 150px;
-    margin-right: -12% !important; /* Adjust the margin-right as needed */
+    margin-right: -12% !important;
   }
 
   h3.section-subheading {
     padding-left: 150px;
-    margin-right: -5% !important; /* Adjust the margin-right as needed */
+    margin-right: -5% !important; 
+  }
+  .section-heading,
+  .section-subheading,
+  .timeline {
+    margin-left: 30px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .timeline-panel {
+    text-align: center;
+  }
+
+  .timeline-image,
+  .timeline-inverted .timeline-image {
+    margin: 0 auto;
+  }
+
+  #customTimelineItem .timeline-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #customTimelineItem h4 {
+    margin: 0;
+  }
+} */
+
+/* @media (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  h1.section-heading {
+    
+    margin-right: 5% !important;
+  }
+  h2.section-heading {
+    padding-left: 150px;
+    margin-right: -12% !important;
+  }
+
+  h3.section-subheading {
+    padding-left: 150px;
+    margin-right: -5% !important;
   }
 
   .section-heading,
@@ -184,4 +225,4 @@
   #customTimelineItem h4 {
     margin: 0;
   }
-}
+} */
